@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const selectedFiltersDiv = document.getElementById('selected-filters');
 
   const clearButton = document.createElement('button');
+  clearButton.className = "delete"
   clearButton.textContent = 'Clear';
   clearButton.style.display = 'none'; // Initially hidden
-  clearButton.style.marginRight = '400px';
+  clearButton.style.marginRight = '128px';
   clearButton.style.marginTop = '-51px';
   clearButton.style.padding = '5px 10px';
   clearButton.style.float = 'right';
@@ -17,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
   clearButton.style.color = 'rgb(81, 161, 128)';
   clearButton.style.cursor = 'pointer';
   clearButton.style.fontSize = '16px';
-  clearButton.style.backgroundColor = '#D6E2E8';
+  clearButton.style.backgroundColor = 'white';
+  clearButton.style.transform = 'translateY(-67px)';
   // Add Clear button to the selectedFiltersDiv container
   selectedFiltersDiv.parentElement.insertBefore(clearButton, selectedFiltersDiv);
 
